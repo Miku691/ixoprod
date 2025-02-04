@@ -1,0 +1,32 @@
+[
+    {
+        "id": 33,
+        "title": "Top 10 Important GK and Quiz about Utkala Dibasa | Utkal Divas Facts",
+        "description": "Odisha Day, also known as Utkala Dibasa, is celebrated on April 1st each year. This day remember the formation of the state of Odisha (formerly Orissa) on April 1, 1936. It was the first state in India to be formed on a linguistic basis during the British era.",
+        "postUrl": "utkala-dibasa-quiz",
+        "subCategoryUrl": "odisha-special",
+        "createdOn": "2025-02-04",
+        "createdBy": "Miku",
+        "subCategory": {
+            "id": 1,
+            "name": "Utkala Dibasa",
+            "subCategoryUrl": "utkala-dibasa",
+            "category": {
+                "id": 1,
+                "name": "Odisha Special",
+                "categoryUrl": "odisha-special"
+            }
+        },
+        "documents": [
+            {
+                "id": 34,
+                "docName": "utkala-dibasa-top-10-quiz",
+                "docId": "5",
+                "docUrl": "https://res.cloudinary.com/ddlvbiaan/image/upload/t_infoxodia-logo/c_fill,h_430,w_640/v1738482659/odisha-infoxodia-category-infoxodia.webp",
+                "source": "APP-2",
+                "uploadedOn": "2025-02-04",
+                "uploadedBy": "Miku"
+            }
+        ]
+    }
+]

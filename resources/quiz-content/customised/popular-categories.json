@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "name": "Odisha Special",
+        "description": "In this category of infoxodia, we will get general knowledge and quizzes about different special days and events of odisha like utkala dibasa and others. Odisha is full with amazing content, deep-dive into the field of unique gk and quiz with infoxodia",
+        "createdOn": "2025-02-04",
+        "categoryUrl": "odisha-special",
+        "isActive": "active",
+        "categoryImgUrl": {
+            "id": 1,
+            "docName": "odisha-infoxodia-category",
+            "docId": "5",
+            "docUrl": "https://res.cloudinary.com/ddlvbiaan/image/upload/t_infoxodia-logo/c_fill,h_430,w_640/v1738482659/odisha-infoxodia-category-infoxodia.webp",
+            "source": "APP-2",
+            "uploadedOn": "2025-02-04",
+            "uploadedBy": "Miku"
+        }
+    }
+]

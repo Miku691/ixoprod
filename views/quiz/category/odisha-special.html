@@ -1,0 +1,83 @@
+<div ng-controller="categoryController">
+
+    <nav-bar></nav-bar>
+
+    <div class="container-fluid text-center pb-4 py-md-6">
+        <div class="lc-block card border-0 text-center rounded p-4 p-lg-6"
+            style="background:url(../../../assets/svg/ffflux-background.svg)  center / cover no-repeat;">
+            <div class="row card-body mb-3 mb-lg-4">
+                <div class="col-xl-11 col-xxl-9 mx-auto">
+                    <div class="lc-block text-white">
+                        <h3 editable="inline" class="fw-bold display-6">This is <span
+                            class="lc-block position-relative">{{ixoCategory.name}} <img
+                                class="position-absolute top-100 start-0 mt-n1 img-fluid"
+                                src="../../../assets/svg/white_underline.svg"></span> category</h3>
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div class="lc-block"><a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a></div> -->
+
+        </div>
+    </div>
+
+
+    <!-- Post Article List --  -->
+
+    <section>
+        <div class="container py-6 py-lg-8">
+            <div class="lc-block">
+                <div id="archiveHomePosts" class="d-grid gap-3 mw-8 mx-auto">
+                    <!-- post here  -->
+                    <div class="col-12 py-3 border-top" ng-repeat="subCategory in ixoCategory.subCategories">
+                        <div class="row align-items-center" ng-repeat="ixoQuizPost in subCategory.ixoQuizPosts">
+                            <div class="col-lg-2 mb-3 mb-lg-0">
+                                <img loading="lazy"
+                                    ng-src="{{ixoQuizPost.documents[0].docUrl}}"
+                                    sizes="(max-width: 300px) 100vw, 300px" class="img-fluid" alt="{{ixoQuizPost.documents[0].docName}}">
+                            </div>
+                            <div class="col-9 mb-3 mb-lg-0">
+                                <div class="mw-4">
+                                    <div class="row">
+                                        <span class="col-6 col-lg-2 text-body text-opacity-75 mb-1 d-block">
+                                            {{subCategory.name}}
+                                        </span>
+                                        <span class="col-6 col-lg-10 text-body text-opacity-75 mb-1 d-block">
+                                            {{ixoQuizPost.createdOn}}
+                                        </span>
+                                    </div>
+                                    <h3 class="fw-bold">
+                                        {{ixoQuizPost.title}}
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="col ms-lg-auto">
+                                <a class="d-inline-flex align-items-center fw-semibold icon-link icon-link-hover"
+                                    href="http://127.0.0.1:5500/#/quiz/{{subCategory.category.categoryUrl}}/{{ixoQuizPost.postUrl}}">
+                                    <span>Read</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        class="bi bi-arrow-right animate-bounce" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- post here end -->
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+ 
+ 
+  
+<!-- nav-bar  -->
+
+<footer-bar></footer-bar>
+
+
+</div>

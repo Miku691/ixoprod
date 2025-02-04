@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>infoXodia | Odiasha's culture, tradition, arts, gk and quiz</title>
+    <meta name="description" content="InfoXOdia - An Odisha website to explore Odisha's culture, tradition, art, language and educating people with odia general knowledge and quiz">
+    <!-- <base href="/"> -->
+
+    <!-- Load angular js files -->
+    <script src="thirdparty/angularjs/angular.min.js"></script>
+    <script src="thirdparty/angularjs/angular-route.min.js"></script>
+    <script src="thirdparty/angularjs/angular-animate.min.js"></script>
+    <script src="thirdparty/angularjs/angular-aria.min.js"></script>
+    <script src="thirdparty/angularjs/angular-messages.min.js"></script>
+
+    <script src="thirdparty/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- load bootstrap files  -->
+     <script src="thirdparty/bootstrap/js/bootstrap.bundle.min.js"></script>
+     <link rel="stylesheet" href="thirdparty/bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+     <!-- loading custom design  -->
+      <link rel="stylesheet" href="thirdparty/custom/custom-theme.css">
+    <!-- Load angular app -->
+    <script src="app.js"></script>
+
+    <!-- load service -->
+     <script type="module" src="services/firebaseConfig.js"></script>
+     <script src="services/appCallService.js"></script>
+     <script src="services/dataTransfer.js"></script>
+     <script src="services/setAppMetaData.js"></script>
+
+    <!-- Load Controllers -->
+     <!-- <script src="controllers/loginController.js"></script> -->
+     <script src="controllers/dashboardController.js"></script>
+     <script src="controllers/SitemapController.js"></script>
+     <script src="controllers/quiz/ixoquizController.js"></script>
+     <script src="controllers/quiz/post/postController.js"></script>
+     <script src="controllers/quiz/category/categoryController.js"></script>
+     <script src="controllers/pages/contactUsController.js"></script>
+     <script src="controllers/pages/aboutUsController.js"></script>
+
+     <!-- load template controllers  -->
+      <script src="controllers/TemplateControllers/DashboardContentController.js"></script>
+      <script src="controllers/TemplateControllers/ManageContentController.js"></script>
+
+     <!-- load directive -->
+      <script src="directives/templatesDirective.js"></script>
+      <script src="directives/quizTemplateDirective.js"></script>
+
+     <!-- load css files  -->
+     <link rel="stylesheet" href="styles/quiz/ixoquizpoststyle.css">
+     <link rel="stylesheet" href="styles/dashboard.css">
+     <link rel="stylesheet" href="styles/login.css">
+     <link rel="stylesheet" href="styles/quiz/ixoquizstyle.css">
+     <link rel="stylesheet" href="styles/general.css">
+
+</head>
+
+<body ng-app="ixoUI" ng-controller="appController">
+   <div ng-view ></div>
+</body>
+
+
+</html>

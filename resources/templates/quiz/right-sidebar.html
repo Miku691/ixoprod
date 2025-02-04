@@ -1,0 +1,63 @@
+<div class="my-4">
+        <!-- Blog Author Widget -->
+        <!-- <div class="blog-author-widget widget-item">
+            <div class="d-flex flex-column align-items-center">
+                <div class="d-flex align-items-center w-100">
+                    <img src="../../../assets/images/user.png" class="rounded-circle flex-shrink-0 img-thumbnail"
+                        alt="alt">
+                    <div>
+                        <h4>ABC XYZ</h4>
+                        <div class="social-links">
+                            <a href="https://x.com/#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
+                            <a href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
+                            <a href="https://instagram.com/#"><i class="biu bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium.
+                    Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium
+                    ut unde voluptas.
+                </p>
+
+            </div>
+        </div> -->
+        <!--/Blog Author Widget -->
+
+        <!-- Recent Posts Widget -->
+        <div class="recent-posts-widget widget-item">
+            <h3 class="widget-title">Recent Posts</h3>
+            <div ng-repeat="post in ixoRecentPostsSidebar">
+                <div class="post-item mt-2">
+                    <img ng-src="{{post.documents[0].docUrl}}" alt="{{post.documents[0].title}}">
+                    <div>
+                        <h4><a href="{{siteUrls.quizPage}}/{{post.subCategoryUrl}}/{{post.postUrl}}">{{post.title}}</a></h4>
+                        <time datetime="2020-01-01">{{post.createdOn}}</time>
+                    </div>
+                </div><!-- End recent post item-->
+            </div>
+        </div><!--/Recent Posts Widget -->
+
+        <!-- Tags Widget -->
+        <div class="tags-widget widget-item">
+
+            <h3 class="widget-title">Categories</h3>
+            <ul>
+                <li><a href="#">Festival</a></li>
+                <li><a href="#">IT</a></li>
+                <!-- <li><a href="#">Business</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Office</a></li>
+                <li><a href="#">Creative</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Smart</a></li>
+                <li><a href="#">Tips</a></li>
+                <li><a href="#">Marketing</a></li> -->
+            </ul>
+
+        </div><!--/Tags Widget -->
+
+</div>

@@ -1,0 +1,15 @@
+.quiz-scroll-title {
+    cursor: pointer;
+}
+
+.custom-title-scroller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.post-category-date {
+    margin: 0;
+}
+

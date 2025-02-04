@@ -1,0 +1,78 @@
+.loginBox {
+  max-width: 90%;
+  width: 40%;
+  margin-top: 10%;
+}
+
+.draggable-dialog {
+  position: fixed;
+  /* Fix dialog to the screen */
+}
+
+.dialog-header {
+  background-color: #3f51b5;
+  color: white;
+  padding: 10px;
+  cursor: move;
+  /* Indicate that this area is draggable */
+}
+
+.md-dialog-content {
+  padding: 20px;
+}
+
+.quiz-form {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+}
+
+.quiz-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  /* Add spacing between the options */
+}
+
+.option-container {
+  flex: 0 0 48%;
+  /* Each option takes 48% of the width, allowing for two per row */
+}
+
+.md-input-container {
+  margin-bottom: 20px;
+}
+
+.md-dialog-actions {
+  padding: 10px;
+  text-align: right;
+}
+
+.md-button.md-primary {
+  margin-left: 10px;
+}
+
+/* Optional: Add some margins between elements for better spacing */
+input,
+textarea,
+md-select {
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.logedInUser{
+  font-size: 15px;
+}
+
+.custom-input{
+  margin: 20px 0;
+}
+
+md-content{
+  height: 100vh;
+}

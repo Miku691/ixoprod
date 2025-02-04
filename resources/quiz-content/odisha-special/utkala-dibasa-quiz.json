@@ -1,0 +1,140 @@
+{
+    "id": 33,
+    "title": "Top 10 Important GK and Quiz about Utkala Dibasa | Utkal Divas Facts",
+    "description": "Odisha Day, also known as Utkala Dibasa, is celebrated on April 1st each year. This day remember the formation of the state of Odisha (formerly Orissa) on April 1, 1936. It was the first state in India to be formed on a linguistic basis during the British era.",
+    "postUrl": "utkala-dibasa-quiz",
+    "subCategoryUrl": "odisha-special",
+    "createdOn": "2025-02-04",
+    "createdBy": "Miku",
+    "quizzes": [
+        {
+            "id": 1,
+            "question": "When is Utkala Dibasa celebrated?",
+            "correctAns": 2,
+            "ansDescription": "Utkala Dibasa, also known as Odisha Day, is celebrated on April 1 every year to remember the formation of the state of Odisha on April 1, 1936.",
+            "quizOptions": {
+                "option_1": "1st March",
+                "option_2": "1st April",
+                "option_3": "10th April",
+                "option_4": "1st May"
+            }
+        },
+        {
+            "id": 2,
+            "question": "What event led to the formation of Odisha as a separate stage?",
+            "correctAns": 3,
+            "ansDescription": "The formation of Odisha as a separate province was a result of the Government of India Act, 1935, which reorganized provinces and recognized the distinct linguistic identity of Odia-speaking people.",
+            "quizOptions": {
+                "option_1": "The Simon Commission",
+                "option_2": "The First Round Table Conference",
+                "option_3": "The Government of India Act, 1935",
+                "option_4": "The Quit India Movement"
+            }
+        },
+        {
+            "id": 33,
+            "question": "Which of the below historical figure is known as the father of the Odia language?",
+            "correctAns": 2,
+            "ansDescription": "Sarala Das is known as the father of the Odia language and is celebrated for his contributions to Odia literature, including the translation of the Mahabharata into Odia.",
+            "quizOptions": {
+                "option_1": "Jayadeva",
+                "option_2": "Sarala Das",
+                "option_3": "Fakir Mohan Senapati",
+                "option_4": "Madhusudan Das"
+            }
+        },
+        {
+            "id": 34,
+            "question": "Who was the first Chief Minister of Odisha after it became a separate state?",
+            "correctAns": 2,
+            "ansDescription": "Dr. Harekrushna Mahatab was the first Chief Minister of Odisha, serving from 1946 to 1950, and played a significant role in the development of odisha.",
+            "quizOptions": {
+                "option_1": "Nabakrushna Choudhuri",
+                "option_2": "Harekrushna Mahatab",
+                "option_3": "Biju Patnaik",
+                "option_4": "Janaki Ballabh Patnaik"
+            }
+        },
+        {
+            "id": 35,
+            "question": "Which city was hosted the first session of the Utkal Sammilani?",
+            "correctAns": 4,
+            "ansDescription": "The first session of the Utkal Sammilani was held in Balasore in 1903, marking the beginning of the movement for Odia unification.",
+            "quizOptions": {
+                "option_1": "Bhubaneswar",
+                "option_2": "Cuttack",
+                "option_3": "Puri",
+                "option_4": "Balasore"
+            }
+        },
+        {
+            "id": 36,
+            "question": "Who played a significant role in the formation of the state of Odisha?",
+            "correctAns": 3,
+            "ansDescription": "Madhusudan Das, also known as Utkal Gourav (Pride of Utkal), played a crucial role in the formation of the state of Odisha as a separate stage and worked hard for the recognition of Odia identity.",
+            "quizOptions": {
+                "option_1": "Dr. Rajendra Prasad",
+                "option_2": "Gopabandhu Das",
+                "option_3": "Madhusudan Das",
+                "option_4": "Subhas Chandra Bose"
+            }
+        },
+        {
+            "id": 37,
+            "question": "Who was the first Governor of Odisha after it became a separate state?",
+            "correctAns": 1,
+            "ansDescription": "John Austin Hubback was the first Governor of Odisha, serving from 1936 to 1938.",
+            "quizOptions": {
+                "option_1": "John Austin Hubback",
+                "option_2": "Kailash Nath Katju",
+                "option_3": "Satyendra Prasanna Sinha",
+                "option_4": "Sachindra Nath Sanyal"
+            }
+        },
+        {
+            "id": 38,
+            "question": "Initially, Odisha was formed with how many districts?",
+            "correctAns": 2,
+            "ansDescription": "Initially, Odisha was formed with six districts, those are Cuttack, Puri, Balasore, Sambalpur, Koraput, and Ganjam.",
+            "quizOptions": {
+                "option_1": "5",
+                "option_2": "6",
+                "option_3": "7",
+                "option_4": "8"
+            }
+        },
+        {
+            "id": 39,
+            "question": "Odisha became a separete state by separating with which state?",
+            "correctAns": 2,
+            "ansDescription": "Earlier a province of Bihar, Odisha separated into an independent state on April 1, 1936.",
+            "quizOptions": {
+                "option_1": "Maharashtra",
+                "option_2": "Bihar",
+                "option_3": "Chhattisgarh",
+                "option_4": "Karnataka"
+            }
+        }
+    ],
+    "subCategory": {
+        "id": 1,
+        "name": "Utkala Dibasa",
+        "subCategoryUrl": "utkala-dibasa",
+        "category": {
+            "id": 1,
+            "name": "Odisha Special",
+            "categoryUrl": "odisha-special"
+        }
+    },
+    "documents": [
+        {
+            "id": 34,
+            "docName": "utkala-dibasa-top-10-quiz",
+            "docId": "5",
+            "docUrl": "https://res.cloudinary.com/ddlvbiaan/image/upload/t_infoxodia-logo/c_fill,h_430,w_640/v1738482659/odisha-infoxodia-category-infoxodia.webp",
+            "source": "APP-2",
+            "uploadedOn": "2025-02-04",
+            "uploadedBy": "Miku"
+        }
+    ]
+}

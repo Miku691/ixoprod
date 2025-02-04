@@ -1,0 +1,76 @@
+:root {
+    --gk-body-bg: #f1f5f9;
+    --gk-body-color: #334155;
+    --gk-navbar-vertical-bg: #fff;
+    --gk-navbar-bg: #fff;
+    --gk-card-background: #fff;
+    --gk-input-bg: #fff;
+    --gk-input-disabled-bg: #e2e8f0;
+    --gk-input-focus-border: #baa7ff;
+    --gk-input-border: #cbd5e1;
+    --gk-input-placeholder-color: #64748b;
+    --gk-input-focus-box-shadow: 0px 0px 0px 3px rgba(231,225,253,.75);
+    --gk-input-check-border: var(--gk-input-border);
+    --gk-input-group-addon-bg: #e2e8f0;
+    --gk-form-text-color: #94a3b8;
+    --gk-form-label-color: #334155;
+    --gk-border-color: #e2e8f0;
+    --gk-page-link-hover-color: #f1f5f9;
+    --gk-dropdown-background: #fff;
+    --gk-dropdown-link-color: #0f172a;
+    --gk-dropdown-link-hover-color: #0e1526;
+    --gk-dropdown-link-hover-bg: #f1f5f9;
+    --gk-dropdown-border-width: 0px;
+    --gk-dropdown-shadow: 0 10px 30px 0 rgba(31,45,61,.1);
+    --gk-modal-bg: #f1f5f9;
+    --gk-progress-background: #cbd5e1;
+    --gk-btn-ghost-bg: #cbd5e1;
+    --gk-tagify-border-color: #cbd5e1;
+    --gk-navbar-vertical-bg: #1e293b;
+    --gk-navbar-vertical-link: #94a3b8;
+    --gk-navbar-vertical-link-hover: #cbd5e1
+}
+
+
+
+.gap-2 {
+    gap: .5rem !important;
+}
+.justify-content-center {
+    justify-content: center !important;
+}
+.flex-wrap {
+    flex-wrap: wrap !important;
+}
+.d-flex {
+    display: flex !important;
+}
+
+.btn-tag {
+    --gk-btn-color: var(--gk-gray-500);
+    --gk-btn-border-color: var(--gk-gray-200);
+    --gk-btn-bg: var(--gk-white);
+    --gk-btn-hover-color: var(--gk-gray-800);
+    --gk-btn-hover-bg: var(--gk-gray-200);
+    --gk-btn-hover-border-color: var(--gk-gray-200);
+    --gk-btn-focus-shadow-rgb: 51, 58, 74;
+    --gk-btn-active-color: var(--gk-gray-800);
+    --gk-btn-active-bg: var(--gk-gray-200);
+    --gk-btn-active-border-color: var(--gk-gray-200);
+    --gk-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    --gk-btn-disabled-color: #192e4d;
+    --gk-btn-disabled-bg: transparent;
+    --gk-btn-disabled-border-color: var(--gk-gray-200);
+    --gk-gradient: none;
+    --gk-btn-border-radius: 50rem;
+}
+
+.btn:hover {
+    background-color: var(--gk-btn-hover-bg);
+    border-color: var(--gk-btn-hover-border-color);
+    color: var(--gk-btn-hover-color);
+}
+
+a:hover {
+    --gk-link-color-rgb: '94, 63, 203';
+}

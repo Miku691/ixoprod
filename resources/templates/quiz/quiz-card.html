@@ -1,0 +1,12 @@
+<h3 id="h3heading4" class="fw-bold mt-3">2. Complete the following sentences: Alice couldn't
+    _______ the humiliation any longer and stormed out of the room red as a bed.</h3>
+<div id="quiz-options" ng-class="{'column-layout': isColumnLayout}">
+    <div class="row">
+        <div class="col-6 option-item" ng-repeat="option in options"> 
+            <input type="radio" name="box" id="option{{$index}}" class="option-radio">
+            <label for="option{{$index}}" class="box w-100 option-label">
+                <div class="course"> <span class="circle"></span> <span class="subject">{{option.text}}</span> </div>
+            </label> 
+        </div>
+    </div>
+</div>
