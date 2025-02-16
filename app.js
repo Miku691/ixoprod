@@ -8,20 +8,20 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             meta: {
                 title: 'infoXodia | Odiasha\'s culture, tradition, arts, gk and quiz',
                 description: 'InfoXOdia - An Odisha website to explore Odisha\'s culture, tradition, art, language and educating people with odia general knowledge and quiz',
-                url: 'http://127.0.0.1:5500/#/'
+                url: 'https://www.infoxodia.com/#/'
             },
             ogMeta: {
                 'og:title': 'infoXodia | Odiasha\'s culture, tradition, arts, gk and quiz',
                 'og:type': 'website',
-                'og:url': 'http://127.0.0.1:5500/#/',
-                'og:image': 'http://127.0.0.1:5500/assets/svg/about-us.svg',
+                'og:url': 'https://www.infoxodia.com/#/',
+                'og:image': 'https://www.infoxodia.com/assets/svg/about-us.svg',
                 'og:description': 'InfoXOdia - An Odisha website to explore Odisha\'s culture, tradition, art, language and educating people with odia general knowledge and quiz'
             },
             schemaData: {
                 "@context": "https://schema.org",
                 "@type": "WebPage",
                 "name": "infoXodia | Odiasha\'s culture, tradition, arts, gk and quiz",
-                "url": "http://127.0.0.1:5500/#/",
+                "url": "https://www.infoxodia.com/#/",
                 "description": "InfoXOdia - An Odisha website to explore Odisha\'s culture, tradition, art, language and educating people with odia general knowledge and quiz"
             }
         }).
@@ -35,13 +35,13 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             meta: {
                 title: 'infoXodia - Contact us page',
                 description: 'Please check out infoxodia\'s contact us page for any support or connecting with us. write your feedback and submit the form',
-                url: 'http://127.0.0.1:5500/#/contact'
+                url: 'https://www.infoxodia.com/#/contact'
             },
             ogMeta: {
                 'og:title': 'infoXodia - Contact us page',
                 'og:type': 'website',
-                'og:url': 'http://127.0.0.1:5500/#/contact',
-                'og:image': 'http://127.0.0.1:5500/#/assets/svg/contact-us.svg',
+                'og:url': 'https://www.infoxodia.com/#/contact',
+                'og:image': 'https://www.infoxodia.com/#/assets/svg/contact-us.svg',
                 'og:description': 'Please check out infoxodia\'s contact us page for any support or connecting with us. write your feedback and submit the form'
             }
         }).
@@ -51,13 +51,13 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             meta: {
                 title: 'infoXodia - About us page',
                 description: 'Do you know who are we? Please visit About us page for detailed information about infoxodia.',
-                url: 'http://127.0.0.1:5500/#/about'
+                url: 'https://www.infoxodia.com/#/about'
             },
             ogMeta: {
                 'og:title': 'infoXodia - About us page',
                 'og:type': 'website',
-                'og:url': 'http://127.0.0.1:5500/#/about',
-                'og:image': 'http://127.0.0.1:5500/#/assets/svg/about-us.svg',
+                'og:url': 'https://www.infoxodia.com/#/about',
+                'og:image': 'https://www.infoxodia.com/#/assets/svg/about-us.svg',
                 'og:description': 'Do you know who are we? Please visit About us page for detailed information about infoxodia.'
             }
         }).
@@ -79,13 +79,13 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             meta: {
                 title: 'infoXodia - Page Not Found',
                 description: 'This is 404 page not found webpage for infoxodia website',
-                url: 'http://127.0.0.1:5500/#/page-not-found'
+                url: 'https://www.infoxodia.com/#/page-not-found'
             },
             ogMeta: {
                 'og:title': 'infoXodia - Page Not Found',
                 'og:type': 'website',
-                'og:url': 'http://127.0.0.1:5500/#/page-not-found',
-                'og:image': 'http://127.0.0.1:5500/#/assets/svg/page-not-found.svg',
+                'og:url': 'https://www.infoxodia.com/#/page-not-found',
+                'og:image': 'https://www.infoxodia.com/#/assets/svg/page-not-found.svg',
                 'og:description': 'This is 404 page not found webpage for infoxodia website'
             }
         }).
@@ -95,13 +95,13 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             meta: {
                 title: 'infoXodia - Frequently asked question page',
                 description: 'This is frequently asked questions (faq) page of infoxodia',
-                url: 'http://127.0.0.1:5500/#/ixo-faq'
+                url: 'https://www.infoxodia.com/#/ixo-faq'
             },
             ogMeta: {
                 'og:title': 'infoXodia - Frequently asked question page',
                 'og:type': 'website',
-                'og:url': 'http://127.0.0.1:5500/#/ixo-faq',
-                'og:image': 'http://127.0.0.1:5500/#/assets/svg/FAQ.svg',
+                'og:url': 'https://www.infoxodia.com/#/ixo-faq',
+                'og:image': 'https://www.infoxodia.com/#/assets/svg/FAQ.svg',
                 'og:description': 'This is frequently asked questions (faq) page of infoxodia'
             }
         }).
@@ -203,8 +203,8 @@ app.controller('appController', ($scope, $rootScope, ApiService, MetaDataService
         $scope.baseUrlFirebaseService = '../resources/quiz-content/';
         //$scope.checkUserLogedState();
         $rootScope.siteUrls = {
-            "homePage": "http://127.0.0.1:5500/#/",
-            "quizPage": "http://127.0.0.1:5500/#/quiz"
+            "homePage": "https://www.infoxodia.com/#/",
+            "quizPage": "https://www.infoxodia.com/#/quiz"
         };
         localStorage.setItem('ixoSiteUrl', JSON.stringify($rootScope.siteUrls));
         $rootScope.homePageUrl = $rootScope.siteUrls.homePage;
