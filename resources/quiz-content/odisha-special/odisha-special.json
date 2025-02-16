@@ -77,6 +77,70 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": 33,
+            "name": "Odisha's First",
+            "description": "Explore the remarkable firsts in Odisha's First GK and Quiz with ixoQuiz. Discover the pioneering personalities, groundbreaking events, and significant milestones that shaped the cultural and historical landscape of Odisha.",
+            "createdOn": "2025-02-13",
+            "subCategoryUrl": "odisha-first",
+            "document": {
+                "id": 97,
+                "docName": "odihsa first gk and quiz",
+                "docId": "5",
+                "docUrl": "img",
+                "source": "APP-2",
+                "uploadedOn": "2025-02-13",
+                "uploadedBy": "Miku"
+            },
+            "category": {
+                "id": 1,
+                "name": "Odisha Special",
+                "description": "In this category of infoxodia, we will get general knowledge and quizzes about different special days and events of odisha like utkala dibasa and others. Odisha is full with amazing content, deep-dive into the field of unique gk and quiz with infoxodia",
+                "createdOn": "2025-02-04",
+                "categoryUrl": "odisha-special",
+                "categoryImgUrl": {
+                    "id": 1,
+                    "docName": "odisha-infoxodia-category",
+                    "docId": "5",
+                    "docUrl": "https://res.cloudinary.com/ddlvbiaan/image/upload/t_infoxodia-logo/c_fill,h_430,w_640/v1738482659/odisha-infoxodia-category-infoxodia.webp",
+                    "source": "APP-2",
+                    "uploadedOn": "2025-02-04",
+                    "uploadedBy": "Miku"
+                }
+            },
+            "ixoQuizPosts": [
+                {
+                    "id": 65,
+                    "title": "12+ Odia Gk & Quiz about Odisha's First | Odisha First Person, Events and More",
+                    "description": "Dive into the rich history of Odisha with our comprehensive quiz and General knowledge. Explore the first personalities, landmark events, and significant milestones that have shaped Odisha's legacy. Join us for an informative and engaging journey into Odisha's remarkable achievements and contributions.",
+                    "postUrl": "odisha-first-gk-set1",
+                    "subCategoryUrl": "odisha-special",
+                    "createdOn": "2025-02-13",
+                    "createdBy": "Garuda",
+                    "subCategory": {
+                        "id": 33,
+                        "name": "Odisha's First",
+                        "subCategoryUrl": "odisha-first",
+                        "category": {
+                            "id": 1,
+                            "name": "Odisha Special",
+                            "categoryUrl": "odisha-special"
+                        }
+                    },
+                    "documents": [
+                        {
+                            "id": 98,
+                            "docName": "odisha-first-gk-quiz",
+                            "docId": "5",
+                            "docUrl": "https://res.cloudinary.com/ddlvbiaan/image/upload/t_infoxodia-logo/c_fill,h_430,w_640/v1739464715/odisha-first-gk-quiz-infoxodia.webp",
+                            "source": "APP-2",
+                            "uploadedOn": "2025-02-13",
+                            "uploadedBy": "Miku"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

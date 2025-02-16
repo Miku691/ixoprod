@@ -8,7 +8,21 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             meta: {
                 title: 'infoXodia | Odiasha\'s culture, tradition, arts, gk and quiz',
                 description: 'InfoXOdia - An Odisha website to explore Odisha\'s culture, tradition, art, language and educating people with odia general knowledge and quiz',
-                url: 'https://www.infoxodia.com/#/'
+                url: 'http://127.0.0.1:5500/#/'
+            },
+            ogMeta: {
+                'og:title': 'infoXodia | Odiasha\'s culture, tradition, arts, gk and quiz',
+                'og:type': 'website',
+                'og:url': 'http://127.0.0.1:5500/#/',
+                'og:image': 'http://127.0.0.1:5500/assets/svg/about-us.svg',
+                'og:description': 'InfoXOdia - An Odisha website to explore Odisha\'s culture, tradition, art, language and educating people with odia general knowledge and quiz'
+            },
+            schemaData: {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "infoXodia | Odiasha\'s culture, tradition, arts, gk and quiz",
+                "url": "http://127.0.0.1:5500/#/",
+                "description": "InfoXOdia - An Odisha website to explore Odisha\'s culture, tradition, art, language and educating people with odia general knowledge and quiz"
             }
         }).
         when('/quiz', {
@@ -20,8 +34,15 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             controller: 'contactUsController',
             meta: {
                 title: 'infoXodia - Contact us page',
-                description: 'Let check infoxodia\'s contact us page for any support or connecting with us. write your feedback and submit the form',
-                url: 'https://www.infoxodia.com/#/contact'
+                description: 'Please check out infoxodia\'s contact us page for any support or connecting with us. write your feedback and submit the form',
+                url: 'http://127.0.0.1:5500/#/contact'
+            },
+            ogMeta: {
+                'og:title': 'infoXodia - Contact us page',
+                'og:type': 'website',
+                'og:url': 'http://127.0.0.1:5500/#/contact',
+                'og:image': 'http://127.0.0.1:5500/#/assets/svg/contact-us.svg',
+                'og:description': 'Please check out infoxodia\'s contact us page for any support or connecting with us. write your feedback and submit the form'
             }
         }).
         when('/about', {
@@ -30,7 +51,14 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             meta: {
                 title: 'infoXodia - About us page',
                 description: 'Do you know who are we? Please visit About us page for detailed information about infoxodia.',
-                url: 'https://www.infoxodia.com/#/about'
+                url: 'http://127.0.0.1:5500/#/about'
+            },
+            ogMeta: {
+                'og:title': 'infoXodia - About us page',
+                'og:type': 'website',
+                'og:url': 'http://127.0.0.1:5500/#/about',
+                'og:image': 'http://127.0.0.1:5500/#/assets/svg/about-us.svg',
+                'og:description': 'Do you know who are we? Please visit About us page for detailed information about infoxodia.'
             }
         }).
         when('/quiz/:categoryId', {
@@ -51,7 +79,14 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             meta: {
                 title: 'infoXodia - Page Not Found',
                 description: 'This is 404 page not found webpage for infoxodia website',
-                url: 'https://www.infoxodia.com/#/page-not-found'
+                url: 'http://127.0.0.1:5500/#/page-not-found'
+            },
+            ogMeta: {
+                'og:title': 'infoXodia - Page Not Found',
+                'og:type': 'website',
+                'og:url': 'http://127.0.0.1:5500/#/page-not-found',
+                'og:image': 'http://127.0.0.1:5500/#/assets/svg/page-not-found.svg',
+                'og:description': 'This is 404 page not found webpage for infoxodia website'
             }
         }).
         when('/ixo-faq', {
@@ -60,15 +95,38 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             meta: {
                 title: 'infoXodia - Frequently asked question page',
                 description: 'This is frequently asked questions (faq) page of infoxodia',
-                url: 'https://www.infoxodia.com/#/ixo-faq'
+                url: 'http://127.0.0.1:5500/#/ixo-faq'
+            },
+            ogMeta: {
+                'og:title': 'infoXodia - Frequently asked question page',
+                'og:type': 'website',
+                'og:url': 'http://127.0.0.1:5500/#/ixo-faq',
+                'og:image': 'http://127.0.0.1:5500/#/assets/svg/FAQ.svg',
+                'og:description': 'This is frequently asked questions (faq) page of infoxodia'
             }
         }).
-        when('/sitemap.xml', {
+        when('/sitemap.html', {
             templateUrl: 'views/sitemap.html',
             controller: 'SitemapController'
         }).
+        when('/sitemap.xml', {
+            templateUrl: 'sitemap.xml',
+            //controller: 'SitemapController'
+        }).
         when('/robots.txt', {
             templateUrl: 'robots.txt',
+            // controller: 'SitemapController'
+        }).
+        when('/privacy-policy', {
+            templateUrl: 'views/pages/privacy-policy.html',
+            // controller: 'SitemapController'
+        }).
+        when('/disclaimer', {
+            templateUrl: 'views/pages/disclaimer.html',
+            // controller: 'SitemapController'
+        }).
+        when('/terms-condition', {
+            templateUrl: 'views/pages/terms-condition.html',
             // controller: 'SitemapController'
         }).
         otherwise({
@@ -101,6 +159,31 @@ app.run(['$rootScope', '$anchorScroll', '$route', '$timeout', function($rootScop
             }
         });
 
+        //set open graph - details..
+        $timeout(function() {
+            if ($route.current && $route.current.ogMeta) {
+                Object.keys($route.current.ogMeta).forEach(function(property) {
+                    var element = document.querySelector('meta[property="' + property + '"]');
+                    if (element) {
+                        element.setAttribute('content', $route.current.ogMeta[property]);
+                    } else {
+                        element = document.createElement('meta');
+                        element.setAttribute('property', property);
+                        element.setAttribute('content', $route.current.ogMeta[property]);
+                        document.head.appendChild(element);
+                    }
+                });
+            }
+        });
+
+        //setting metadata schema
+        $timeout(function() {
+            if ($route.current && $route.current.schemaData){
+                let schema = $route.current.schemaData;
+                $rootScope.setSchemaDataDetails(schema);
+            }
+        });
+
         $timeout(function() {
             if ($route.current && $route.current.meta){
                 let url = $route.current.meta.url;
@@ -120,8 +203,8 @@ app.controller('appController', ($scope, $rootScope, ApiService, MetaDataService
         $scope.baseUrlFirebaseService = '../resources/quiz-content/';
         //$scope.checkUserLogedState();
         $rootScope.siteUrls = {
-            "homePage": "https://www.infoxodia.com/#/",
-            "quizPage": "https://www.infoxodia.com/#/quiz"
+            "homePage": "http://127.0.0.1:5500/#/",
+            "quizPage": "http://127.0.0.1:5500/#/quiz"
         };
         localStorage.setItem('ixoSiteUrl', JSON.stringify($rootScope.siteUrls));
         $rootScope.homePageUrl = $rootScope.siteUrls.homePage;
@@ -175,6 +258,27 @@ app.controller('appController', ($scope, $rootScope, ApiService, MetaDataService
 
     $rootScope.setCanonicalTag = (url) => {
         MetaDataService.setCanonical(url);
+    }
+
+    $rootScope.setOgMetaDetails = (tags) => {
+        MetaDataService.setOgMetaTags(tags);
+    }
+
+    //prepare open graph tags
+    $rootScope.prepareOgTags = (title, type, siteUrl, image, desc) => {
+        var openGraphTags = {
+            'og:title': title,
+            'og:type': type,
+            'og:url': siteUrl,
+            'og:image': image,
+            'og:description': desc,
+        };
+        return openGraphTags;
+    }
+
+    //schema data setting
+    $rootScope.setSchemaDataDetails = (schema) => {
+        MetaDataService.setSchemaData(schema);
     }
 
     // $scope.checkUserLogedState = async () => {

@@ -1,9 +1,5 @@
-<pre style="padding: 10px">
-
 User-agent: *
 Disallow: /resources/quiz-content/
 Disallow: /thirdparty/
 
 Sitemap: https://www.infoxodia.com/#/sitemap.xml
-
-<pre>

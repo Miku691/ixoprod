@@ -5,6 +5,9 @@ app.controller("postController", ['$scope', '$rootScope', '$timeout', '$location
             //variable 
             $scope.headings = [];
             $scope.isAnsCorrect = false;
+            let url = $location.absUrl();
+            $scope.isResponseReceived = false;
+
             $scope.rightSideRecentPosts = DataTransferService.getRecentPostData();
             $rootScope.postMetadata = JSON.parse(localStorage.getItem('postMetadata'));
             let postUrlPath = $scope.path = $location.path();
@@ -28,13 +31,16 @@ app.controller("postController", ['$scope', '$rootScope', '$timeout', '$location
                     $rootScope.postQuiz = response;
                     $rootScope.quizes = $rootScope.postQuiz.quizzes;
                     $rootScope.setMetaDataDetails($rootScope.postQuiz.title, $rootScope.postQuiz.description);
+                    $rootScope.setOgMetaDetails($rootScope.prepareOgTags($rootScope.postQuiz.title, 'article', url, $rootScope.postQuiz.documents[0].docUrl, $rootScope.postQuiz.description));
                     $rootScope.getHeadings();
+
+                    $scope.isResponseReceived = true;
                 })
                 .catch(function (error) {
                     console.error("Error fetching quiz data:", error);
                 });
 
-                //fetch recent posts.....
+            //fetch recent posts.....
             $scope.endpoint = "customised/recent-post.json"
             $rootScope.customizeAndCallAPI($scope.endpoint, 'get', '', 'async')
             .then(function(response) {
@@ -46,8 +52,35 @@ app.controller("postController", ['$scope', '$rootScope', '$timeout', '$location
             });
 
             //set canonical tag
-            let url = $location.absUrl();
+            
             $rootScope.setCanonicalTag(url);
+
+            //call the schema data set function..
+            $scope.$watch('isResponseReceived', function(newValue, oldValue) {
+                if (newValue === true) {
+                    let articleSchema = {
+                        "@context": "https://schema.org",
+                        "@type": "Article",
+                        "headline": $rootScope.postQuiz.title,
+                        "description": $rootScope.postQuiz.description,
+                        "author": {
+                            "@type": "Person",
+                            "name": $rootScope.postQuiz.createdBy
+                        },
+                        "datePublished": $rootScope.postQuiz.createdOn,
+                        "image": $rootScope.postQuiz.documents[0].docUrl,
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Your Organization",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "http://example.com/logo.png"
+                            }
+                        }
+                    };
+                    $rootScope.setSchemaDataDetails(articleSchema);
+                }
+            });
         }
 
         $scope.ixoMsg = "This is ixoquiz";

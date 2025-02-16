@@ -1,0 +1,176 @@
+{
+    "id": 65,
+    "title": "12+ Odia Gk & Quiz about Odisha's First | Odisha First Person, Events and More",
+    "description": "Dive into the rich history of Odisha with our comprehensive quiz and General knowledge. Explore the first personalities, landmark events, and significant milestones that have shaped Odisha's legacy. Join us for an informative and engaging journey into Odisha's remarkable achievements and contributions.",
+    "postUrl": "odisha-first-gk-set1",
+    "subCategoryUrl": "odisha-special",
+    "createdOn": "2025-02-13",
+    "createdBy": "Garuda",
+    "quizzes": [
+        {
+            "id": 65,
+            "question": "Who is the first chief minister of Odisha?",
+            "correctAns": 3,
+            "ansDescription": "Harekrushna Mahatab (born name Harekrushna Das) was the leader of the Indian National Congress and a notable figure in the Indian independence movement. He served as the Chief Minister of Odisha from 1946 to 1950 and again from 1956 to 1961.",
+            "quizOptions": {
+                "option_1": "Nabin Pattnayak",
+                "option_2": "Govind Ballabh Pant",
+                "option_3": "Harekrushna Mahatab",
+                "option_4": "Nabakrushna Choudhury"
+            }
+        },
+        {
+            "id": 66,
+            "question": "Who is the first IAS officer from Odisha?",
+            "correctAns": 1,
+            "ansDescription": "Ram Chandra Patra, IAS (retd.), was the first Indian Administrative Service (IAS) officer from Kalahandi district, Odisha. He was born in Dharamgarh on April 24, 1919, and was known for his contributions as a bureaucrat, social worker, and administrator.",
+            "quizOptions": {
+                "option_1": "Ram Chandra Patra",
+                "option_2": "Satyendranath Tagore",
+                "option_3": "Jagannathan Murali",
+                "option_4": "O.P Choudhury"
+            }
+        },
+        {
+            "id": 67,
+            "question": "Who is the first governor of Odisha?",
+            "correctAns": 2,
+            "ansDescription": "Sir John Austen Hubback, KCSI, was a British administrator in India who served as the first Governor of Odisha. He was educated at Winchester College and King's College, Cambridge, and entered the Indian Civil Service in 1902.",
+            "quizOptions": {
+                "option_1": "Chakravarthi Rajagopalachari",
+                "option_2": "Sir John Austen Hubback",
+                "option_3": "Dinesh Nandan Sahay",
+                "option_4": "Smt. Sarojini Naidu"
+            }
+        },
+        {
+            "id": 68,
+            "question": "What is the first capital of Odisha?",
+            "correctAns": 4,
+            "ansDescription": "Cuttack was the first capital of Odisha. It is one of the oldest cities in India, founded by King Ananga Bhimadev-III.",
+            "quizOptions": {
+                "option_1": "Khordha",
+                "option_2": "Bhubaneswar",
+                "option_3": "Puri",
+                "option_4": "Cuttack"
+            }
+        },
+        {
+            "id": 69,
+            "question": "What is the first university of Odisha?",
+            "correctAns": 1,
+            "ansDescription": "Utkal University, established in 1943, is the oldest university in Odisha and the 17th oldest university in India.",
+            "quizOptions": {
+                "option_1": "Utkal University",
+                "option_2": "Veer Surendra Sai University of Technology",
+                "option_3": "Vikram Dev University",
+                "option_4": "Sambalpur University"
+            }
+        },
+        {
+            "id": 70,
+            "question": "What is the first newspaper in Odisha?",
+            "correctAns": 2,
+            "ansDescription": "Utkala Deepika, the first Odia printed newspaper, was started on August 4, 1866, by Gourishankar Ray and Babu Bichitrananda Das. August 4 is celebrated as Odia Journalism Day.",
+            "quizOptions": {
+                "option_1": "Prameya",
+                "option_2": "Utkala Deepika",
+                "option_3": "Sambada",
+                "option_4": "Dharitri"
+            }
+        },
+        {
+            "id": 71,
+            "question": "Who is the first Odia pilot?",
+            "correctAns": 1,
+            "ansDescription": "Giribala Mohanty was the first female airwoman from Odisha and the first to have a license to fly a private aircraft.",
+            "quizOptions": {
+                "option_1": "Giribala Mohanty",
+                "option_2": "Anupriya Lakra",
+                "option_3": "Biju Patnaik",
+                "option_4": "Shelbi Mishra"
+            }
+        },
+        {
+            "id": 72,
+            "question": "Who is the first IGP(Inspector General of Police) officer in Odisha?",
+            "correctAns": 3,
+            "ansDescription": "J.E. Pearman was the first Inspector General of Police (IGP) of Odisha after India gained independence in 1947.",
+            "quizOptions": {
+                "option_1": "Dr. Soumya Mishra",
+                "option_2": "Shri Arun Kumar Ray",
+                "option_3": "J.E. Pearman",
+                "option_4": "Rajesh Kumar"
+            }
+        },
+        {
+            "id": 73,
+            "question": "Who is the first scientist of Odisha?",
+            "correctAns": 2,
+            "ansDescription": "Dr. Pranakrushna Parija, a renowned botanist and Padma Bhushan awardee, is considered the first modern scientist from Odisha. He made significant contributions to agricultural development in the state of Odisha.",
+            "quizOptions": {
+                "option_1": "Swati Nayak",
+                "option_2": "Dr. Pranakrushna Parija",
+                "option_3": "Prafulla Kumar",
+                "option_4": "Susama Panigrahi"
+            }
+        },
+        {
+            "id": 74,
+            "question": "What is the name of the first Odia film?",
+            "correctAns": 1,
+            "ansDescription": "Sita Bibaha, released on April 28, 1936, was the first Odia film, directed by Mohan Sundar Deb Goswami.",
+            "quizOptions": {
+                "option_1": "Sita Bibaha",
+                "option_2": "Gopa Helebi Sata",
+                "option_3": "Nagapanchami",
+                "option_4": "Rebati"
+            }
+        },
+        {
+            "id": 75,
+            "question": "What is the first college of Odisha?",
+            "correctAns": 4,
+            "ansDescription": "Ravenshaw College, established in 1868, is the first college in Odisha and one of the oldest in India.",
+            "quizOptions": {
+                "option_1": "Einstein College",
+                "option_2": "Burla Medical College",
+                "option_3": "Gandhi Institute",
+                "option_4": "Ravenshaw College"
+            }
+        },
+        {
+            "id": 76,
+            "question": "Who is the first freedom fighter of Odisha?",
+            "correctAns": 1,
+            "ansDescription": "Jayee Rajguru (1739 - 1806) is considered one of the first freedom fighters of Odisha and the first martyr to fight against the British East India Company.",
+            "quizOptions": {
+                "option_1": "Jayee Rajguru",
+                "option_2": "Baji Rout",
+                "option_3": "Rama Devi",
+                "option_4": "Gopabandhu Das"
+            }
+        }
+    ],
+    "subCategory": {
+        "id": 33,
+        "name": "Odisha's First",
+        "subCategoryUrl": "odisha-first",
+        "category": {
+            "id": 1,
+            "name": "Odisha Special",
+            "categoryUrl": "odisha-special"
+        }
+    },
+    "documents": [
+        {
+            "id": 98,
+            "docName": "odisha-first-gk-quiz",
+            "docId": "5",
+            "docUrl": "https://res.cloudinary.com/ddlvbiaan/image/upload/t_infoxodia-logo/c_fill,h_430,w_640/v1739464715/odisha-first-gk-quiz-infoxodia.webp",
+            "source": "APP-2",
+            "uploadedOn": "2025-02-13",
+            "uploadedBy": "Miku"
+        }
+    ]
+}

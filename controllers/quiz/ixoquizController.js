@@ -22,10 +22,24 @@ app.controller("ixoquizController", ['$scope', '$rootScope', '$location', 'DataT
             let desc = 'Let deep-dive into amazing general knowledge and quiz content of odisha culture, tradition, festival, art and more'
             $rootScope.setMetaDataDetails(title, desc);
 
-
             //set canonical tag
             let url = $location.absUrl();
             $rootScope.setCanonicalTag(url);
+
+            //title, type, siteUrl, image, desc
+            let imageUrl = 'https://res.cloudinary.com/ddlvbiaan/image/upload/t_infoxodia-logo/c_fill,h_430,w_640/v1738482659/odisha-infoxodia-category-infoxodia.webp';
+            $rootScope.setOgMetaDetails($rootScope.prepareOgTags(title, 'website', url, imageUrl, desc));
+
+            //web page schema setup
+            let schemaData = {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "ixoQuiz | infoXodia GK and QUIZ",
+                "url": "http://127.0.0.1:5500/#/quiz",
+                "description": "Let deep-dive into amazing general knowledge and quiz content of odisha culture, tradition, festival, art and more"
+            }
+            $rootScope.setSchemaDataDetails(schemaData);
+
         }
 
         $scope.ixoMsg = "This is ixoquiz";
