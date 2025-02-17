@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /resources/quiz-content/
-Disallow: /thirdparty/
+Allow: /
 
 Sitemap: https://www.infoxodia.com/#/sitemap.xml
