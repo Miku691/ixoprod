@@ -1,0 +1,222 @@
+<div ng-controller="postController">
+	<nav-bar></nav-bar>
+	<scroll-txt></scroll-txt>
+
+	<div class="container-fluid">
+		<div class="row">
+			<!-- left side bar start -->
+			<quiz-left-sidebar class="col-lg-3 my-4 d-none d-lg-block side-div"></quiz-left-sidebar>
+			<!-- left side bar end -->
+
+			<!-- Blog Details Section -->
+			<div class="col-lg-6">
+				<section id="blog-details" class="blog-details section my-4">
+					<div id="content">
+
+						<article class="article">
+
+							<div class="post-img text-center">
+								<img ng-src="{{postQuiz.documents[0].docUrl}}" alt="{{postQuiz.documents[0].docName}}" class="img-fluid lazy">
+							</div>
+
+							<h1 class="display-6">
+								{{postQuiz.title}}
+							</h1>
+							<div>
+								<p>{{postQuiz.description}}</p>
+							</div>
+
+							<div class="meta-top">
+								<ul>
+									<li class="d-flex align-items-center"><i class="bi bi-person"></i> 
+										<snap>{{postQuiz.createdBy}}</snap></li>
+									<li class="d-flex align-items-center"><i class="bi bi-clock"></i> 
+										<snap><time datetime="2020-01-01">{{postQuiz.createdOn}}</time></snap>
+									</li>
+									<!-- <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a
+											href="blog-details.html">12 Comments</a></li> -->
+								</ul>
+							</div><!-- End meta top -->
+
+							<div class="content meta-bottom">
+
+								<!-- starting content for the post  -->
+								<div>
+									<h2 id="h1heading1">Odia Quiz: Discover Odisha Smallest GK and Quiz</h2>
+									<p>
+                                        Welcome to our exciting quiz about Odisha smallest wonders! In this odisha gk and quiz post, we dive deep into the lesser-known aspects of Odisha, exploring the smallest districts, rivers, wildlife sanctuaries, and much more.
+                                    </p>
+									<p>
+                                        This quiz is designed to test your knowledge and provide you with fascinating insights about the unique and smallest entities that make Odisha so special.
+									</p>
+                                    <p>
+                                        Whether you're a quiz enthusiast, a student preparing for exams, or simply curious about Odisha, this odia general knowledge post to be both informative and engaging. Let's get started and see how well you know Odisha smallest wonders!
+                                    </p>
+								</div>
+								
+
+
+								<!-- generating quiz cards  -->
+								<div class="quiz-container mb-3">
+									<div class="row">
+										<!-- dynamic  -->
+										<div class="col-12 p-3 mb-3 custom-shadow rounded"
+											ng-repeat="quizItem in quizes">
+											<h3 id="h3heading4{{$index}}" class="fw-bold mt-3">{{$index + 1}} -
+												{{quizItem.question}}</h3>
+											<div id="quiz-options" ng-class="{'column-layout': isColumnLayout}">
+												<div class="row">
+													<div class="col-6 option-item"
+														ng-repeat="optionKey in [1, 2, 3, 4]">
+														<input type="radio" name="box{{$index}}"
+															id="option{{$index}}{{$parent.$index}}" class="option-radio"
+															ng-model="selectedOptions[$parent.$index]"
+															ng-value="'option_' + optionKey"
+															ng-change="checkAnswer(quizItem, optionKey, $parent.$index)">
+														<label for="option{{$index}}{{$parent.$index}}"
+															class="box w-100 option-label-failure" ng-class="{'option-label-success': isAnsCorrect}">
+															<div class="quizcard-option"> <span class="circle"></span>
+																<span
+																	class="subject">{{quizItem.quizOptions['option_'
+																	+ optionKey]}}</span> </div>
+														</label>
+													</div>
+												</div>
+											</div>
+											<!-- answer dropdown  -->
+											<div>
+												<div class="col pt-2 d-flex flex-column justify-content-center">
+													<div class="accordion accordion-flush" id="accordionFlushMyFAQ1">
+														<div class="lc-block accordion-item">
+														
+															<a editable="inline"
+																class="fw-bold collapsed icon-link icon-link-hover"
+																href="#" data-bs-toggle="collapse"
+																data-bs-target="#flush-collapseOne{{$index}}"
+																aria-expanded="false" aria-controls="flush-collapseOne">
+																Show Description
+																<!-- <i class="bi bi-arrow-bar-down"></i> -->
+															</a>
+														
+															<div id="flush-collapseOne{{$index}}"
+																class="accordion-collapse collapse"
+																aria-labelledby="flush-headingOne"
+																data-bs-parent="#accordionFlushMyFAQ1">
+																<div class="accordion-body" editable="rich">
+																	{{quizItem.ansDescription}}
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+                            <!-- Conclusion  -->
+                             <div>
+                                <h2>Conclusion</h2>
+                                <p>
+                                    We hope you enjoyed this journey through Odisha smallest gk, quiz and discovered some insight facts along the way. Whether you enjoyed the odia quiz or learned something new, we’re thrilled to have you join us in exploring the lesser-known aspects of Odisha.
+                                </p>
+                                <p>
+                                    Stay tuned for more exciting odisha gk, quizzes and insightful content about Odisha's rich cultural and geographical landscape.
+                                </p>
+                                <p>
+                                    Don't forget to share your this odisha general knowledge post with you friends and family. Do let us know any feedback or improvment on the odia quiz or in the infoxodia website.
+                                </p>
+                             </div>
+							<!-- End post content -->
+							<div class="meta-bottom">
+								<i class="bi bi-folder"></i>
+								<ul class="cats">
+									<li><a href="{{siteUrls.quizPage}}/{{postQuiz.subCategoryUrl}}">{{postQuiz.subCategory.name}}</a></li>
+								</ul>
+
+								<!-- <i class="bi bi-tags"></i>
+								<ul class="tags">
+									<li><a href="#">Creative</a></li>
+									<li><a href="#">Tips</a></li>
+									<li><a href="#">Marketing</a></li>
+								</ul> -->
+							</div><!-- End meta bottom -->
+
+						</article>
+
+					</div>
+				</section><!-- /Blog Details Section -->
+
+				<!-- Comment Form Section -->
+				<!-- <section id="comment-form" class="comment-form section">
+					<div>
+
+						<form action="">
+
+							<h4>Post Comment</h4>
+							<p>Your email address will not be published. Required fields are marked * </p>
+							<div class="row">
+								<div class="col-md-6 form-group">
+									<input name="name" type="text" class="form-control" placeholder="Your Name*">
+								</div>
+								<div class="col-md-6 form-group">
+									<input name="email" type="text" class="form-control" placeholder="Your Email*">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col form-group">
+									<input name="website" type="text" class="form-control" placeholder="Your Website">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col form-group">
+									<textarea name="comment" class="form-control"
+										placeholder="Your Comment*"></textarea>
+								</div>
+							</div>
+
+							<div class="text-center">
+								<button type="submit" class="btn btn-primary">Post Comment</button>
+							</div>
+
+						</form>
+
+					</div>
+				</section> -->
+				<!-- /Comment Form Section -->
+			</div>
+
+			<!-- right side bar start  -->
+			 <quiz-right-sidebar class="col-lg-3"></quiz-right-sidebar>
+			<!-- right side bar end  -->
+			
+			<footer-bar></footer-bar>
+		</div>
+
+		<!-- Offcanvas for small screens -->
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+			aria-labelledby="offcanvasExampleLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasExampleLabel">Side Menu</h5>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+					aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body" id="offcanvasBody">
+				<ul>
+					<li ng-repeat="heading in headings" data-bs-dismiss="offcanvas">
+						<a href="" ng-click="scrollToHeading(heading.id)">{{heading.text}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Floating Button (Only visible on small screens) -->
+		<button class="btn btn-primary d-lg-none position-fixed top-0 start-0 my-5 mx-1" type="button"
+			data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+			<!-- Hamburger Icon (Font Awesome) -->
+			<i class="bi bi-card-list"></i>
+		</button>
+	</div>
+</div>
+</div>

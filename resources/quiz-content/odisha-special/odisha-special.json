@@ -141,6 +141,70 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": 65,
+            "name": "Odisha's Smallest",
+            "description": "Explore our engaging quiz about Odisha smallest general knowlege question and answer, including districts, rivers, wildlife sanctuaries, and more. Test your knowledge and learn fascinating facts about the smallest entities in Odisha.",
+            "createdOn": "2025-02-18",
+            "subCategoryUrl": "odisha-smallest",
+            "document": {
+                "id": 129,
+                "docName": "odisha-smallest-odia-gk-quiz-img",
+                "docId": "5",
+                "docUrl": "https://res.cloudinary.com/ddlvbiaan/image/upload/t_infoxodia-logo/c_fill,h_430,w_640/v1739884134/odisha-smallest-odia-gk-quiz-img-infoxodia.webp",
+                "source": "APP-2",
+                "uploadedOn": "2025-02-18",
+                "uploadedBy": "Miku"
+            },
+            "category": {
+                "id": 1,
+                "name": "Odisha Special",
+                "description": "In this category of infoxodia, we will get general knowledge and quizzes about different special days and events of odisha like utkala dibasa and others. Odisha is full with amazing content, deep-dive into the field of unique gk and quiz with infoxodia",
+                "createdOn": "2025-02-04",
+                "categoryUrl": "odisha-special",
+                "categoryImgUrl": {
+                    "id": 1,
+                    "docName": "odisha-infoxodia-category",
+                    "docId": "5",
+                    "docUrl": "https://res.cloudinary.com/ddlvbiaan/image/upload/t_infoxodia-logo/c_fill,h_430,w_640/v1738482659/odisha-infoxodia-category-infoxodia.webp",
+                    "source": "APP-2",
+                    "uploadedOn": "2025-02-04",
+                    "uploadedBy": "Miku"
+                }
+            },
+            "ixoQuizPosts": [
+                {
+                    "id": 97,
+                    "title": "15+ Odisha Smallest Wonders GK and Quiz | infoXodia - Odisha GK",
+                    "description": "Explore our engaging quiz about Odisha smallest general knowlege question and answer, including districts, rivers, wildlife sanctuaries, and more. Test your knowledge and learn fascinating facts about the smallest entities in Odisha. Deep-dive into the amazing odisha gk and odia quiz, test your knowledge!",
+                    "postUrl": "odisha-smallest-gk-quiz-mcq-set1",
+                    "subCategoryUrl": "odisha-special",
+                    "createdOn": "2025-02-18",
+                    "createdBy": "Miku",
+                    "subCategory": {
+                        "id": 65,
+                        "name": "Odisha's Smallest",
+                        "subCategoryUrl": "odisha-smallest",
+                        "category": {
+                            "id": 1,
+                            "name": "Odisha Special",
+                            "categoryUrl": "odisha-special"
+                        }
+                    },
+                    "documents": [
+                        {
+                            "id": 161,
+                            "docName": "odisha-smallest-odia-gk-quiz",
+                            "docId": "5",
+                            "docUrl": "https://res.cloudinary.com/ddlvbiaan/image/upload/t_infoxodia-logo/v1739896941/odisha-smallest-odia-gk-quiz-infoxodia.webp",
+                            "source": "APP-2",
+                            "uploadedOn": "2025-02-18",
+                            "uploadedBy": "Miku"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
