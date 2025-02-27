@@ -27,7 +27,6 @@ jobs:
     - name: Pre-render with Puppeteer
       run: npm run prerender
 
-
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
