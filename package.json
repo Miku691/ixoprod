@@ -1,0 +1,14 @@
+{
+  "name": "ixoquiz",
+  "version": "1.0.0",
+  "description": "Pre-render AngularJS content for SEO",
+  "main": "index.js",
+  "scripts": {
+    "prerender": "node prerender.js"
+  },
+  "author": "Miku",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^16.0.0"
+  }
+}
