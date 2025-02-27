@@ -135,6 +135,7 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         
     
     $locationProvider.hashPrefix('');
+    
     $locationProvider.html5Mode(true);
 }
 ]);
