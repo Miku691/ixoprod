@@ -1,21 +1,23 @@
 <!DOCTYPE html><html lang="en"><head><style>@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoXodia</title>
-    <meta name="description" content="InfoXOdia - An Odia website to explore Odisha's culture, educating people with odia gk and quiz">
-    <!-- <base href="/"> -->
-
+    <title>infoXodia | Odiasha's culture, tradition, arts, gk and quiz</title>
+    <meta name="description" content="InfoXOdia - An Odisha website to explore Odisha's culture, tradition, art, language and educating people with odia general knowledge and quiz">
+    <base href="/">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="infoXodia | Odiasha's culture, tradition, arts, gk and quiz">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.infoxodia.com/#/">
+    <meta property="og:image" content="https://www.infoxodia.com/assets/svg/about-us.svg">
+    <meta property="og:description" content="InfoXOdia - An Odisha website to explore Odisha's culture, tradition, art, language and educating people with odia general knowledge and quiz">
+    
     <!-- Load angular js files -->
     <script src="thirdparty/angularjs/angular.min.js"></script>
     <script src="thirdparty/angularjs/angular-route.min.js"></script>
     <script src="thirdparty/angularjs/angular-animate.min.js"></script>
     <script src="thirdparty/angularjs/angular-aria.min.js"></script>
     <script src="thirdparty/angularjs/angular-messages.min.js"></script>
-
-    <!-- Load material ui files
-    <script src="thirdparty/materialui/angular-material.min.js"></script>
-    <link rel="stylesheet" href="thirdparty/materialui/angular-material.min.css">
-    <script src="thirdparty/materialui/angular-material-icons.min.js"></script> -->
 
     <script src="thirdparty/jquery/jquery-3.6.0.min.js"></script>
 
@@ -33,10 +35,12 @@
      <script type="module" src="services/firebaseConfig.js"></script>
      <script src="services/appCallService.js"></script>
      <script src="services/dataTransfer.js"></script>
+     <script src="services/setAppMetaData.js"></script>
 
     <!-- Load Controllers -->
-     <script src="controllers/loginController.js"></script>
+     <!-- <script src="controllers/loginController.js"></script> -->
      <script src="controllers/dashboardController.js"></script>
+     <script src="controllers/SitemapController.js"></script>
      <script src="controllers/quiz/ixoquizController.js"></script>
      <script src="controllers/quiz/post/postController.js"></script>
      <script src="controllers/quiz/category/categoryController.js"></script>
@@ -58,12 +62,51 @@
      <link rel="stylesheet" href="styles/quiz/ixoquizstyle.css">
      <link rel="stylesheet" href="styles/general.css">
 
-</head>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"infoXodia | Odiasha's culture, tradition, arts, gk and quiz","url":"https://www.infoxodia.com/#/","description":"InfoXOdia - An Odisha website to explore Odisha's culture, tradition, art, language and educating people with odia general knowledge and quiz"}</script><link rel="canonical" href="https://www.infoxodia.com/#/"></head>
 
 <body ng-app="ixoUI" ng-controller="appController" class="ng-scope">
    <!-- ngView: --><div ng-view="" class="ng-scope"><div ng-controller="dashboardController" class="ng-scope">
 	<div>
-		<nav-bar></nav-bar>
+		<nav-bar><nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary general-nav">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">infoXodia</a>
+      <!-- <img class="navbar-brand img-fluid" style="height: 50px;" src="../../assets/svg/infoxodia-header-logo.svg" alt="" srcset=""> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li> -->
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.infoxodia.com/#/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.infoxodia.com/#/contact">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              IXO
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.infoxodia.com/#/quiz">ixoQuiz</a></li>
+              <!-- <li><a class="dropdown-item" href="#"></a></li> -->
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex ng-pristine ng-valid" role="search" ng-submit="doSearch()">
+          <input class="form-control me-2 ng-pristine ng-untouched ng-valid ng-empty" type="search" placeholder="Search" aria-label="Search" ng-model="searchQuery">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav></nav-bar>
 
 		<!-- First main content -->
 		<div class="container text-center py-md-6">
@@ -76,9 +119,9 @@
 							</div>
 						</div>
 						<div class="lc-block">
-							<h3 editable="inline" class="fw-bold display-6">This is <span class="lc-block position-relative">infoXodia
-									<img class="position-absolute top-100 start-0 mt-n1 img-fluid" src="../assets/svg/underline.svg"></span> - Odisha Vibes: 
-								Odia's Culture, Festivals, Traditions, GK, Quiz and more..</h3>
+							<h1 editable="inline" class="fw-bold display-6">This is <span class="lc-block position-relative">infoXodia
+									<img class="position-absolute top-100 start-0 mt-n1 img-fluid" src="../assets/svg/underline.svg" alt="img-stroke"></span> - Odisha Vibes: 
+								Odia's Culture, Festivals, Traditions, GK, Quiz and more..</h1>
 						</div>
 					</div>
 				</div>
@@ -93,12 +136,12 @@
 				<div class="row mb-6">
 					<div class="lc-block">
 						<div editable="rich">
-							<h3 editable="inline" class="fw-bold display-6"><span class="lc-block position-relative">Products : <img class="position-absolute top-100 start-0 mt-n1 img-fluid" src="https://cdn.livecanvas.com/media/underline/underline3.svg"></span> </h3>
+							<h3 editable="inline" class="fw-bold display-6"><span class="lc-block position-relative">Products : <img class="position-absolute top-100 start-0 mt-n1 img-fluid" src="https://cdn.livecanvas.com/media/underline/underline3.svg" alt="img-stroke"></span> </h3>
 						</div>
 					</div>
 					<div class="lc-block my-2">
 						<div editable="rich">
-							<h3 class="display-6">Explore our InofXodia's 5+ Amazing Product Categories..
+							<h3 class="display-6">Explore our InofXodia's 2+ Amazing Product Categories..
 							</h3>
 						</div>
 					</div>
@@ -114,7 +157,7 @@
 							<div class="card-body align-items-center justify-content-center d-flex py-6 ixocategories">
 								<!-- <img class="col-10" src="https://cdn.livecanvas.com/media/logos/1.png" alt=""> -->
 								<h4>
-									<a href="http://127.0.0.1:5500/#/quiz">GK, Quiz</a>
+									<a href="https://www.infoxodia.com/#/quiz">GK, Quiz</a>
 								</h4>
 							</div>
 						</div>
@@ -159,9 +202,133 @@
 			</div>
 		</div>
 
-		<footer-bar></footer-bar>
+		<footer-bar><!-- footer -->
+<footer class="pt-lg-10 pt-5 footer bg-white">
+  <div class="container">
+    <div class="row border-top">
+      <div class="col-lg-4 col-md-6 col-12">
+        <!-- about company -->
+        <div class="mb-4">
+          <!-- need to place logo image here ..  -->
+          <!-- <img src="../../assets/svg/underline.svg" alt="" class="logo-inverse"> -->
+           <h3>INFOxODIA</h3>
+          <div class="mt-4">
+            <p>Jay Jagannath ! We are like a family, Join us and let explore our culture together</p>
+            <!-- social media -->
+            <div class="fs-5 mt-4">
+              <!--Facebook-->
+              <a href="https://www.youtube.com/@infoxodia" aria-label="Youtube" class="me-2">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <!--Instagram Thread-->
+              <a href="https://www.instagram.com/infoxodia" aria-label="Instagram" class="me-2">
+                <i class="bi bi-instagram"></i>
+              </a>
+
+              <!--Instagram-->
+              <a href="https://www.threads.net/@infoxodia" aria-label="Thread" class="me-2">
+                <i class="bi bi-threads-fill"></i>
+              </a>
+
+              <!--Twitter X-->
+              <a href="https://x.com/InfoXodia" aria-label="Twitter/X" class="me-2">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offset-lg-1 col-lg-2 col-md-3 col-6">
+        <div class="mb-4">
+          <!-- list -->
+          <h3 class="fw-bold mb-3">Company</h3>
+          <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+            <li><a href="https://www.infoxodia.com/#/about" class="nav-link">About</a></li>
+            <!-- <li><a href="#" class="nav-link">Contact</a></li> -->
+            <!-- <li><a href="#" class="nav-link">Blog</a></li>
+            <li><a href="#" class="nav-link">Careers</a></li> -->
+            <li><a href="https://www.infoxodia.com/#/contact" class="nav-link">Contact</a></li>
+            <li><a href="https://www.infoxodia.com/#/ixo-faq" class="nav-link">FAQ’s</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <div class="mb-4">
+          <!-- list -->
+          <h3 class="fw-bold mb-3">Products</h3>
+          <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+            <!-- <li><a href="#" class="nav-link">Help and Support</a></li>
+            <li><a href="#" class="nav-link">Become Instructor</a></li> -->
+            <!-- <li><a href="#" class="nav-link">Get the app</a></li> -->
+            <li><a href="https://www.infoxodia.com/#/quiz" class="nav-link">IXO QUIZ</a></li>
+            <!-- <li><a href="#" class="nav-link">Tutorial</a></li> -->
+          </ul>
+
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-12">
+        <!-- contact info -->
+        <div class="mb-4">
+          <h3 class="fw-bold mb-3">Get in touch</h3>
+          <p>Please mail us on below Mail id for support and conact</p>
+          <p class="mb-1">Email: <a href="mailto:infoxodia@gmail.com">infoxodia@gmail.com</a></p>
+          <!-- <p>Phone: <span class="text-dark fw-semibold">(000) 123 456 789</span></p> -->
+
+          <!-- playstore and app store link image  -->
+          <!-- <div class="d-flex">
+            <a href="#"><img src="../assets/images/svg/appstore.svg" alt="" class="img-fluid"></a>
+            <a href="#" class="ms-2"><img src="../assets/images/svg/playstore.svg" alt="" class="img-fluid"></a>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center g-0 border-top py-2 mt-6">
+      <!-- Desc -->
+      <div class="col-md-10 col-8">
+        <div class="d-lg-flex align-items-center">
+          <div class="me-4">
+            <span>© <span id="copyright5">
+                <!-- <script>document.getElementById('copyright5').appendChild(document.createTextNode(new Date().getFullYear()))</script> -->
+                 2025
+              </span> infoXodia</span>
+          </div>
+          <div>
+            <nav class="nav nav-footer">
+              <a class="nav-link ps-0" href="https://www.infoxodia.com/#/privacy-policy">Privacy Policy</a>
+              <a class="nav-link px-2 px-md-3" href="https://www.infoxodia.com/#/disclaimer">Disclaimer</a>
+              <!-- <a class="nav-link d-none d-lg-block" href="#">Do Not Sell My Personal Information </a> -->
+              
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!--Other Links Start -->
+      <div class="col-4  col-md-2 d-md-flex justify-content-end">
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle text-body" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fe fe-globe me-2 align-middle"></i>More
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item " href="https://www.infoxodia.com/#/terms-condition"><span class="me-2">
+                </span>Terms and Conditions</a></li>
+            <!-- <li><a class="dropdown-item " href="#"><span class="me-2">
+                </span>Français</a></li>
+            <li>
+              <a class="dropdown-item " href="#"><span class="me-2">
+                </span>Deutsch</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+      <!-- Other links end  -->
+    </div>
+  </div>
+</footer></footer-bar>
 	</div>
 </div></div>
+
 
 
 
